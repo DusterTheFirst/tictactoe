@@ -1,0 +1,93 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#tictactoe canvas{
+    padding: 0;
+    margin: 0px;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+
+#tictactoe {
+    width: 308px;
+    height: 308px;
+    background-color: black;
+}
+
+#grid {
+    user-select: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#turn {
+    height: 50px;
+    vertical-align: middle;
+}
+
+#header{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 7em;
+}
+
+#header h1{
+    display: inline;
+    padding: 0;
+    margin: 0px 0px 0px 20px;
+    vertical-align: middle;
+}
+
+#grid button {
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    border: none;
+    padding: 10px 20px;
+    background-color: indianred;
+    font-weight: bold;
+}
+
+#grid button:hover {
+    border: none;
+    padding: 10px 20px;
+    background-color: palevioletred;
+    font-weight: bold;
+}
+
+#grid #win{
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+}
+
+#tictactoe #hide {
+    background-color: rgba(153, 153, 153, .32);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+#tictactoe #hide.show {
+    visibility: visible;
+}

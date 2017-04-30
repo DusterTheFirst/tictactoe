@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
+    <body oncontextmenu="return false;">
+        <div id="header">
+            <h1>Turn:</h1>
+            <canvas id="turn" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+        </div>
+        
+        <div id="grid">
+            <div id="tictactoe">
+                <canvas id="tl" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+                <canvas id="tm" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+                <canvas id="tr" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+                <canvas id="ml" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+                <canvas id="mm" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+                <canvas id="mr" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+                <canvas id="bl" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+                <canvas id="bm" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+                <canvas id="br" data-state="" height="1000" width="1000" onmousedown="xo(this)"></canvas>
+                <span id="hide"></span>
+            </div>
+            <button onclick="reset()">Reset</button>
+            <h1 id="win"></h1>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
