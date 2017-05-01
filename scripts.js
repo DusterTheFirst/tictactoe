@@ -22,7 +22,7 @@ var turn = "";
 
 getturn();
 
-setInterval(render, render()); 
+setInterval(render, 100); 
 
 function xo(clicked) {
     var preturn = turn;
