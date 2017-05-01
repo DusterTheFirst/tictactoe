@@ -51,7 +51,7 @@ function reset() {
         torender[key].dataset.state = "";
     }
     getturn();
-    $("win").text("");
+    $("#win").text("");
     $("#tictactoe #hide").removeClass("show");
 }
 
