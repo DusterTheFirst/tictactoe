@@ -38,6 +38,14 @@ function xo(clicked) {
     
     if(wincheck(preturn, clicked.id))
         win(preturn);
+    else if(tiecheck())
+        tie();
+}
+
+function tie(){
+    turn = "";
+    $("#win").text(`Draw`);
+    $("#tictactoe #hide").addClass("show");
 }
 
 function win(state){
@@ -65,6 +73,26 @@ function getturn() {
             turn = "X";
             break;
     }
+}
+
+function tiecheck() {
+     return (torender["tl"].dataset.state != "")
+            &&
+            (torender["tr"].dataset.state != "")
+            &&
+            (torender["tm"].dataset.state != "")
+            &&
+            (torender["ml"].dataset.state != "")
+            &&
+            (torender["mm"].dataset.state != "")
+            &&
+            (torender["mr"].dataset.state != "")
+            &&
+            (torender["bl"].dataset.state != "")
+            &&
+            (torender["bm"].dataset.state != "")
+            &&
+            (torender["br"].dataset.state != "")
 }
 
 function wincheck(state, id){
